@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="4">
+
+  <testsuite name="LinkedinLogin"
+    errors="0" failures="1" hostname="" id="" package="LinkedinLogin" skipped="0"
+    tests="4" time="11.29" timestamp="">
+  
+    <testcase name="Search Google" classname="LinkedinLogin" time="2.569" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Go to Linkedin" classname="LinkedinLogin" time="0.8780" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="click sign in" classname="LinkedinLogin" time="0.8320" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="sign in" classname="LinkedinLogin" time="7.008" assertions="1">  <failure message="Expected element &lt;//*[@id=&#34;ember325&#34;]/div[2]&gt; to be present - element was not found - expected [0;32m&#34;present&#34;[0m but got: [0;31m&#34;not present&#34;[0m[0;90m (5497ms)[0m">    at signInWithCredentials (C:\Users\ahemarathn\OneDrive - Wiley\Desktop\QA practice\Trainings\NIghtwatchJS\pages\SearchUtil.js:43:20)
+    at Object.sign in (C:\Users\ahemarathn\OneDrive - Wiley\Desktop\QA practice\Trainings\NIghtwatchJS\tests\LinkedinLogin.js:22:24)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+
+    
+      <failure message="    at signInWithCredentials (C:\Users\ahemarathn\OneDrive - Wiley\Desktop\QA practice\Trainings\NIghtwatchJS\pages\SearchUtil.js:43:20)">    at Object.sign in (C:\Users\ahemarathn\OneDrive - Wiley\Desktop\QA practice\Trainings\NIghtwatchJS\tests\LinkedinLogin.js:22:24)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

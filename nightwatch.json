@@ -1,0 +1,60 @@
+
+  {
+    "src_folders": [
+        "tests"
+    ],
+    "selenium": {
+        "start_process": true,
+        "server_path": "lib/drivers/selenium-server-standalone-3.141.59.jar",
+        "log_path": "",
+        "host": "127.0.0.1",
+        "port": 4444,
+        "cli_args": {
+            "webdriver.chrome.driver": "lib/drivers/chromedriver.exe",
+            "webdriver.ie.driver": "",
+            "webdriver.gecko.driver": "node_modules/bin/geckodriver"
+        }
+    },
+
+    "test_workers": {
+        "enabled": true,
+        "workers": "auto"
+      },
+
+    "test_settings": {
+        "default": {
+            "launch_url": "http://127.0.0.1/",
+            "selenium_port": 4444,
+            "selenium_host": "localhost",
+            "silent": true,
+            "screenshots": {
+                "enabled": false,
+                "path": ""
+            },
+            "desiredCapabilities" : {
+              "browserName" : "chrome",
+              "chromeOptions": {
+                "args" : ["--no-sandbox"],
+                "w3c": false
+              },
+              "loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "INFO"}
+            }
+        },
+        
+        "firefox": {
+            "desiredCapabilities": {
+              "browserName": "firefox",
+              "marionette": true
+            }
+          },
+
+        "chrome": {
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        }
+    }
+  }
+  
